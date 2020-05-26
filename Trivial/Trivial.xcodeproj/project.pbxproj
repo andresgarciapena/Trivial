@@ -33,6 +33,10 @@
 		5BC25AA0247D64C4008667DD /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25A9E247D64C4008667DD /* QuestionsViewController.swift */; };
 		5BC25AA1247D64C4008667DD /* QuestionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC25A9F247D64C4008667DD /* QuestionsViewController.xib */; };
 		5BC25AA4247D652A008667DD /* QuestionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25AA3247D652A008667DD /* QuestionsModel.swift */; };
+		5BC25AAA247D6C38008667DD /* QuestionsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25AA9247D6C38008667DD /* QuestionsProtocol.swift */; };
+		5BC25AAC247D6C4A008667DD /* QuestionsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25AAB247D6C4A008667DD /* QuestionsInteractor.swift */; };
+		5BC25AAE247D6C5B008667DD /* QuestionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25AAD247D6C5B008667DD /* QuestionsPresenter.swift */; };
+		5BC25AB0247D6C6F008667DD /* QuestionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25AAF247D6C6F008667DD /* QuestionsRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +89,10 @@
 		5BC25A9E247D64C4008667DD /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		5BC25A9F247D64C4008667DD /* QuestionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionsViewController.xib; sourceTree = "<group>"; };
 		5BC25AA3247D652A008667DD /* QuestionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsModel.swift; sourceTree = "<group>"; };
+		5BC25AA9247D6C38008667DD /* QuestionsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsProtocol.swift; sourceTree = "<group>"; };
+		5BC25AAB247D6C4A008667DD /* QuestionsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsInteractor.swift; sourceTree = "<group>"; };
+		5BC25AAD247D6C5B008667DD /* QuestionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsPresenter.swift; sourceTree = "<group>"; };
+		5BC25AAF247D6C6F008667DD /* QuestionsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +204,10 @@
 			isa = PBXGroup;
 			children = (
 				5BC25AA2247D64F4008667DD /* Entities */,
+				5BC25AA8247D6C0E008667DD /* Protocols */,
+				5BC25AA7247D6C05008667DD /* Interactor */,
+				5BC25AA6247D6BFD008667DD /* Presenter */,
+				5BC25AA5247D6BF1008667DD /* Router */,
 				5BC25A9D247D64A2008667DD /* View */,
 			);
 			path = Questions;
@@ -334,6 +346,38 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		5BC25AA5247D6BF1008667DD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5BC25AAF247D6C6F008667DD /* QuestionsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5BC25AA6247D6BFD008667DD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5BC25AAD247D6C5B008667DD /* QuestionsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5BC25AA7247D6C05008667DD /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5BC25AAB247D6C4A008667DD /* QuestionsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5BC25AA8247D6C0E008667DD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5BC25AA9247D6C38008667DD /* QuestionsProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -469,10 +513,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BC25A92247D54D4008667DD /* CustomizeGameProtocol.swift in Sources */,
+				5BC25AAA247D6C38008667DD /* QuestionsProtocol.swift in Sources */,
+				5BC25AB0247D6C6F008667DD /* QuestionsRouter.swift in Sources */,
 				5BC25A97247D5E7F008667DD /* TrivialServiceManager.swift in Sources */,
 				5BC25A99247D5EBA008667DD /* TrivialResponse.swift in Sources */,
 				5BC25A43247D434D008667DD /* ViewController.swift in Sources */,
 				5BC25A81247D47F9008667DD /* StartViewProtocol.swift in Sources */,
+				5BC25AAC247D6C4A008667DD /* QuestionsInteractor.swift in Sources */,
 				5BC25A8C247D549F008667DD /* CustomizeGameRouter.swift in Sources */,
 				5BC25A7B247D478A008667DD /* StartViewRouter.swift in Sources */,
 				5BC25A9C247D5F5B008667DD /* Constants.swift in Sources */,
@@ -482,6 +529,7 @@
 				5BC25A3F247D434D008667DD /* AppDelegate.swift in Sources */,
 				5BC25A90247D54C0008667DD /* CustomizeGameInteractor.swift in Sources */,
 				5BC25A7D247D47A5008667DD /* StartViewPresenter.swift in Sources */,
+				5BC25AAE247D6C5B008667DD /* QuestionsPresenter.swift in Sources */,
 				5BC25A41247D434D008667DD /* SceneDelegate.swift in Sources */,
 				5BC25AA4247D652A008667DD /* QuestionsModel.swift in Sources */,
 				5BC25A7F247D47E7008667DD /* StartViewInteractor.swift in Sources */,
