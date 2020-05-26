@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5BC25A3F247D434D008667DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25A3E247D434D008667DD /* AppDelegate.swift */; };
+		5BC25A41247D434D008667DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25A40247D434D008667DD /* SceneDelegate.swift */; };
+		5BC25A43247D434D008667DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25A42247D434D008667DD /* ViewController.swift */; };
+		5BC25A46247D434D008667DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC25A44247D434D008667DD /* Main.storyboard */; };
+		5BC25A48247D4350008667DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BC25A47247D4350008667DD /* Assets.xcassets */; };
+		5BC25A4B247D4350008667DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC25A49247D4350008667DD /* LaunchScreen.storyboard */; };
+		5BC25A56247D4350008667DD /* TrivialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25A55247D4350008667DD /* TrivialTests.swift */; };
+		5BC25A61247D4351008667DD /* TrivialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25A60247D4351008667DD /* TrivialUITests.swift */; };
+		5BC25A74247D44D2008667DD /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25A72247D44D2008667DD /* StartViewController.swift */; };
+		5BC25A75247D44D2008667DD /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC25A73247D44D2008667DD /* StartViewController.xib */; };
+		5BC25A7B247D478A008667DD /* StartViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25A7A247D478A008667DD /* StartViewRouter.swift */; };
+		5BC25A7D247D47A5008667DD /* StartViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25A7C247D47A5008667DD /* StartViewPresenter.swift */; };
+		5BC25A7F247D47E7008667DD /* StartViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25A7E247D47E7008667DD /* StartViewInteractor.swift */; };
+		5BC25A81247D47F9008667DD /* StartViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25A80247D47F9008667DD /* StartViewProtocol.swift */; };
+		5BC25A89247D546B008667DD /* CustomizeGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25A87247D546B008667DD /* CustomizeGameViewController.swift */; };
+		5BC25A8A247D546B008667DD /* CustomizeGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC25A88247D546B008667DD /* CustomizeGameViewController.xib */; };
+		5BC25A8C247D549F008667DD /* CustomizeGameRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25A8B247D549F008667DD /* CustomizeGameRouter.swift */; };
+		5BC25A8E247D54B2008667DD /* CustomizeGamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25A8D247D54B2008667DD /* CustomizeGamePresenter.swift */; };
+		5BC25A90247D54C0008667DD /* CustomizeGameInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25A8F247D54C0008667DD /* CustomizeGameInteractor.swift */; };
+		5BC25A92247D54D4008667DD /* CustomizeGameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25A91247D54D4008667DD /* CustomizeGameProtocol.swift */; };
+		5BC25A97247D5E7F008667DD /* TrivialServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25A96247D5E7F008667DD /* TrivialServiceManager.swift */; };
+		5BC25A99247D5EBA008667DD /* TrivialResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25A98247D5EBA008667DD /* TrivialResponse.swift */; };
+		5BC25A9C247D5F5B008667DD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25A9B247D5F5B008667DD /* Constants.swift */; };
+		5BC25AA0247D64C4008667DD /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25A9E247D64C4008667DD /* QuestionsViewController.swift */; };
+		5BC25AA1247D64C4008667DD /* QuestionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC25A9F247D64C4008667DD /* QuestionsViewController.xib */; };
+		5BC25AA4247D652A008667DD /* QuestionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25AA3247D652A008667DD /* QuestionsModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5BC25A52247D4350008667DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BC25A33247D434D008667DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BC25A3A247D434D008667DD;
+			remoteInfo = Trivial;
+		};
+		5BC25A5D247D4351008667DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BC25A33247D434D008667DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BC25A3A247D434D008667DD;
+			remoteInfo = Trivial;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5BC25A3B247D434D008667DD /* Trivial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trivial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BC25A3E247D434D008667DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5BC25A40247D434D008667DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5BC25A42247D434D008667DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5BC25A45247D434D008667DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5BC25A47247D4350008667DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BC25A4A247D4350008667DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5BC25A4C247D4350008667DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BC25A51247D4350008667DD /* TrivialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrivialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BC25A55247D4350008667DD /* TrivialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrivialTests.swift; sourceTree = "<group>"; };
+		5BC25A57247D4350008667DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BC25A5C247D4351008667DD /* TrivialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrivialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BC25A60247D4351008667DD /* TrivialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrivialUITests.swift; sourceTree = "<group>"; };
+		5BC25A62247D4351008667DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BC25A72247D44D2008667DD /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		5BC25A73247D44D2008667DD /* StartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
+		5BC25A7A247D478A008667DD /* StartViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewRouter.swift; sourceTree = "<group>"; };
+		5BC25A7C247D47A5008667DD /* StartViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewPresenter.swift; sourceTree = "<group>"; };
+		5BC25A7E247D47E7008667DD /* StartViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewInteractor.swift; sourceTree = "<group>"; };
+		5BC25A80247D47F9008667DD /* StartViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewProtocol.swift; sourceTree = "<group>"; };
+		5BC25A87247D546B008667DD /* CustomizeGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeGameViewController.swift; sourceTree = "<group>"; };
+		5BC25A88247D546B008667DD /* CustomizeGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomizeGameViewController.xib; sourceTree = "<group>"; };
+		5BC25A8B247D549F008667DD /* CustomizeGameRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeGameRouter.swift; sourceTree = "<group>"; };
+		5BC25A8D247D54B2008667DD /* CustomizeGamePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeGamePresenter.swift; sourceTree = "<group>"; };
+		5BC25A8F247D54C0008667DD /* CustomizeGameInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeGameInteractor.swift; sourceTree = "<group>"; };
+		5BC25A91247D54D4008667DD /* CustomizeGameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeGameProtocol.swift; sourceTree = "<group>"; };
+		5BC25A96247D5E7F008667DD /* TrivialServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrivialServiceManager.swift; sourceTree = "<group>"; };
+		5BC25A98247D5EBA008667DD /* TrivialResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrivialResponse.swift; sourceTree = "<group>"; };
+		5BC25A9B247D5F5B008667DD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5BC25A9E247D64C4008667DD /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		5BC25A9F247D64C4008667DD /* QuestionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionsViewController.xib; sourceTree = "<group>"; };
+		5BC25AA3247D652A008667DD /* QuestionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BC25A38247D434D008667DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BC25A4E247D4350008667DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BC25A59247D4351008667DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5BC25A32247D434D008667DD = {
+			isa = PBXGroup;
+			children = (
+				5BC25A3D247D434D008667DD /* Trivial */,
+				5BC25A54247D4350008667DD /* TrivialTests */,
+				5BC25A5F247D4351008667DD /* TrivialUITests */,
+				5BC25A3C247D434D008667DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5BC25A3C247D434D008667DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BC25A3B247D434D008667DD /* Trivial.app */,
+				5BC25A51247D4350008667DD /* TrivialTests.xctest */,
+				5BC25A5C247D4351008667DD /* TrivialUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BC25A3D247D434D008667DD /* Trivial */ = {
+			isa = PBXGroup;
+			children = (
+				5BC25A9A247D5F48008667DD /* Common */,
+				5BC25A95247D5E44008667DD /* Services */,
+				5BC25A94247D5DF8008667DD /* Features */,
+				5BC25A3E247D434D008667DD /* AppDelegate.swift */,
+				5BC25A40247D434D008667DD /* SceneDelegate.swift */,
+				5BC25A42247D434D008667DD /* ViewController.swift */,
+				5BC25A44247D434D008667DD /* Main.storyboard */,
+				5BC25A47247D4350008667DD /* Assets.xcassets */,
+				5BC25A49247D4350008667DD /* LaunchScreen.storyboard */,
+				5BC25A4C247D4350008667DD /* Info.plist */,
+			);
+			path = Trivial;
+			sourceTree = "<group>";
+		};
+		5BC25A54247D4350008667DD /* TrivialTests */ = {
+			isa = PBXGroup;
+			children = (
+				5BC25A55247D4350008667DD /* TrivialTests.swift */,
+				5BC25A57247D4350008667DD /* Info.plist */,
+			);
+			path = TrivialTests;
+			sourceTree = "<group>";
+		};
+		5BC25A5F247D4351008667DD /* TrivialUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5BC25A60247D4351008667DD /* TrivialUITests.swift */,
+				5BC25A62247D4351008667DD /* Info.plist */,
+			);
+			path = TrivialUITests;
+			sourceTree = "<group>";
+		};
+		5BC25A6E247D441D008667DD /* StartView */ = {
+			isa = PBXGroup;
+			children = (
+				5BC25A79247D4768008667DD /* Protocols */,
+				5BC25A78247D4759008667DD /* Interactor */,
+				5BC25A77247D4748008667DD /* Presenter */,
+				5BC25A76247D473C008667DD /* Router */,
+				5BC25A71247D44BA008667DD /* View */,
+			);
+			path = StartView;
+			sourceTree = "<group>";
+		};
+		5BC25A6F247D4438008667DD /* CustomizeGame */ = {
+			isa = PBXGroup;
+			children = (
+				5BC25A93247D589D008667DD /* Entities */,
+				5BC25A86247D542C008667DD /* Protocols */,
+				5BC25A85247D5420008667DD /* Interactor */,
+				5BC25A84247D541B008667DD /* Presenter */,
+				5BC25A83247D5414008667DD /* Router */,
+				5BC25A82247D540E008667DD /* View */,
+			);
+			path = CustomizeGame;
+			sourceTree = "<group>";
+		};
+		5BC25A70247D449A008667DD /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				5BC25AA2247D64F4008667DD /* Entities */,
+				5BC25A9D247D64A2008667DD /* View */,
+			);
+			path = Questions;
+			sourceTree = "<group>";
+		};
+		5BC25A71247D44BA008667DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5BC25A72247D44D2008667DD /* StartViewController.swift */,
+				5BC25A73247D44D2008667DD /* StartViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5BC25A76247D473C008667DD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5BC25A7A247D478A008667DD /* StartViewRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5BC25A77247D4748008667DD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5BC25A7C247D47A5008667DD /* StartViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5BC25A78247D4759008667DD /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5BC25A7E247D47E7008667DD /* StartViewInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5BC25A79247D4768008667DD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5BC25A80247D47F9008667DD /* StartViewProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5BC25A82247D540E008667DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5BC25A87247D546B008667DD /* CustomizeGameViewController.swift */,
+				5BC25A88247D546B008667DD /* CustomizeGameViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5BC25A83247D5414008667DD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5BC25A8B247D549F008667DD /* CustomizeGameRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5BC25A84247D541B008667DD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5BC25A8D247D54B2008667DD /* CustomizeGamePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5BC25A85247D5420008667DD /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5BC25A8F247D54C0008667DD /* CustomizeGameInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5BC25A86247D542C008667DD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5BC25A91247D54D4008667DD /* CustomizeGameProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5BC25A93247D589D008667DD /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		5BC25A94247D5DF8008667DD /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				5BC25A6E247D441D008667DD /* StartView */,
+				5BC25A6F247D4438008667DD /* CustomizeGame */,
+				5BC25A70247D449A008667DD /* Questions */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		5BC25A95247D5E44008667DD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5BC25A96247D5E7F008667DD /* TrivialServiceManager.swift */,
+				5BC25A98247D5EBA008667DD /* TrivialResponse.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5BC25A9A247D5F48008667DD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5BC25A9B247D5F5B008667DD /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5BC25A9D247D64A2008667DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5BC25A9E247D64C4008667DD /* QuestionsViewController.swift */,
+				5BC25A9F247D64C4008667DD /* QuestionsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5BC25AA2247D64F4008667DD /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				5BC25AA3247D652A008667DD /* QuestionsModel.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BC25A3A247D434D008667DD /* Trivial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BC25A65247D4351008667DD /* Build configuration list for PBXNativeTarget "Trivial" */;
+			buildPhases = (
+				5BC25A37247D434D008667DD /* Sources */,
+				5BC25A38247D434D008667DD /* Frameworks */,
+				5BC25A39247D434D008667DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Trivial;
+			productName = Trivial;
+			productReference = 5BC25A3B247D434D008667DD /* Trivial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5BC25A50247D4350008667DD /* TrivialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BC25A68247D4351008667DD /* Build configuration list for PBXNativeTarget "TrivialTests" */;
+			buildPhases = (
+				5BC25A4D247D4350008667DD /* Sources */,
+				5BC25A4E247D4350008667DD /* Frameworks */,
+				5BC25A4F247D4350008667DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BC25A53247D4350008667DD /* PBXTargetDependency */,
+			);
+			name = TrivialTests;
+			productName = TrivialTests;
+			productReference = 5BC25A51247D4350008667DD /* TrivialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5BC25A5B247D4351008667DD /* TrivialUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BC25A6B247D4351008667DD /* Build configuration list for PBXNativeTarget "TrivialUITests" */;
+			buildPhases = (
+				5BC25A58247D4351008667DD /* Sources */,
+				5BC25A59247D4351008667DD /* Frameworks */,
+				5BC25A5A247D4351008667DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BC25A5E247D4351008667DD /* PBXTargetDependency */,
+			);
+			name = TrivialUITests;
+			productName = TrivialUITests;
+			productReference = 5BC25A5C247D4351008667DD /* TrivialUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BC25A33247D434D008667DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Andres Garcia";
+				TargetAttributes = {
+					5BC25A3A247D434D008667DD = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					5BC25A50247D4350008667DD = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 5BC25A3A247D434D008667DD;
+					};
+					5BC25A5B247D4351008667DD = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 5BC25A3A247D434D008667DD;
+					};
+				};
+			};
+			buildConfigurationList = 5BC25A36247D434D008667DD /* Build configuration list for PBXProject "Trivial" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5BC25A32247D434D008667DD;
+			productRefGroup = 5BC25A3C247D434D008667DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BC25A3A247D434D008667DD /* Trivial */,
+				5BC25A50247D4350008667DD /* TrivialTests */,
+				5BC25A5B247D4351008667DD /* TrivialUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BC25A39247D434D008667DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BC25AA1247D64C4008667DD /* QuestionsViewController.xib in Resources */,
+				5BC25A4B247D4350008667DD /* LaunchScreen.storyboard in Resources */,
+				5BC25A75247D44D2008667DD /* StartViewController.xib in Resources */,
+				5BC25A8A247D546B008667DD /* CustomizeGameViewController.xib in Resources */,
+				5BC25A48247D4350008667DD /* Assets.xcassets in Resources */,
+				5BC25A46247D434D008667DD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BC25A4F247D4350008667DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BC25A5A247D4351008667DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BC25A37247D434D008667DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BC25A92247D54D4008667DD /* CustomizeGameProtocol.swift in Sources */,
+				5BC25A97247D5E7F008667DD /* TrivialServiceManager.swift in Sources */,
+				5BC25A99247D5EBA008667DD /* TrivialResponse.swift in Sources */,
+				5BC25A43247D434D008667DD /* ViewController.swift in Sources */,
+				5BC25A81247D47F9008667DD /* StartViewProtocol.swift in Sources */,
+				5BC25A8C247D549F008667DD /* CustomizeGameRouter.swift in Sources */,
+				5BC25A7B247D478A008667DD /* StartViewRouter.swift in Sources */,
+				5BC25A9C247D5F5B008667DD /* Constants.swift in Sources */,
+				5BC25A74247D44D2008667DD /* StartViewController.swift in Sources */,
+				5BC25A89247D546B008667DD /* CustomizeGameViewController.swift in Sources */,
+				5BC25A8E247D54B2008667DD /* CustomizeGamePresenter.swift in Sources */,
+				5BC25A3F247D434D008667DD /* AppDelegate.swift in Sources */,
+				5BC25A90247D54C0008667DD /* CustomizeGameInteractor.swift in Sources */,
+				5BC25A7D247D47A5008667DD /* StartViewPresenter.swift in Sources */,
+				5BC25A41247D434D008667DD /* SceneDelegate.swift in Sources */,
+				5BC25AA4247D652A008667DD /* QuestionsModel.swift in Sources */,
+				5BC25A7F247D47E7008667DD /* StartViewInteractor.swift in Sources */,
+				5BC25AA0247D64C4008667DD /* QuestionsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BC25A4D247D4350008667DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BC25A56247D4350008667DD /* TrivialTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BC25A58247D4351008667DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BC25A61247D4351008667DD /* TrivialUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5BC25A53247D4350008667DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BC25A3A247D434D008667DD /* Trivial */;
+			targetProxy = 5BC25A52247D4350008667DD /* PBXContainerItemProxy */;
+		};
+		5BC25A5E247D4351008667DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BC25A3A247D434D008667DD /* Trivial */;
+			targetProxy = 5BC25A5D247D4351008667DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5BC25A44247D434D008667DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BC25A45247D434D008667DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5BC25A49247D4350008667DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BC25A4A247D4350008667DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5BC25A63247D4351008667DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5BC25A64247D4351008667DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5BC25A66247D4351008667DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Trivial/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = andresapps.Trivial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5BC25A67247D4351008667DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Trivial/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = andresapps.Trivial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5BC25A69247D4351008667DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TrivialTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = andresapps.TrivialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trivial.app/Trivial";
+			};
+			name = Debug;
+		};
+		5BC25A6A247D4351008667DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TrivialTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = andresapps.TrivialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trivial.app/Trivial";
+			};
+			name = Release;
+		};
+		5BC25A6C247D4351008667DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TrivialUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = andresapps.TrivialUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Trivial;
+			};
+			name = Debug;
+		};
+		5BC25A6D247D4351008667DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TrivialUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = andresapps.TrivialUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Trivial;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BC25A36247D434D008667DD /* Build configuration list for PBXProject "Trivial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BC25A63247D4351008667DD /* Debug */,
+				5BC25A64247D4351008667DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BC25A65247D4351008667DD /* Build configuration list for PBXNativeTarget "Trivial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BC25A66247D4351008667DD /* Debug */,
+				5BC25A67247D4351008667DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BC25A68247D4351008667DD /* Build configuration list for PBXNativeTarget "TrivialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BC25A69247D4351008667DD /* Debug */,
+				5BC25A6A247D4351008667DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BC25A6B247D4351008667DD /* Build configuration list for PBXNativeTarget "TrivialUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BC25A6C247D4351008667DD /* Debug */,
+				5BC25A6D247D4351008667DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BC25A33247D434D008667DD /* Project object */;
+}
