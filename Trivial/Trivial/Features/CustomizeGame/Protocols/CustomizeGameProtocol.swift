@@ -24,7 +24,7 @@ protocol CustomizeGamePresenterProtocol {
 
 protocol CustomizeGameRouterProtocol {
     
-    func goToQuestions(results: [TrivialResults], fromController: CustomizeGameViewController)
+    func goToQuestions(playerName: String, results: [TrivialResults], fromController: CustomizeGameViewController)
 }
 
 protocol CustomizeGameInteractorProtocol {

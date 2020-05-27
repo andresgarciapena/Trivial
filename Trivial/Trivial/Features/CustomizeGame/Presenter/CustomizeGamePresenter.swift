@@ -14,6 +14,8 @@ class CustomizeGamePresenter: CustomizeGameProtocol {
     var router: CustomizeGameRouter?
     var interactor: CustomizeGameInteractor?
     
+    var playerName: String?
+    
     func viewDidLoad() {
         
         CustomizeGameRouter.configureComponents(presenter: self)
@@ -26,13 +28,13 @@ class CustomizeGamePresenter: CustomizeGameProtocol {
     
     func saveData(name: String, nQuestions: String, category: String) {
         
-        print(name, nQuestions, category)
+        playerName = name
         interactor?.getQuestions(nQuestions: nQuestions, category: category)
     }
     
     func navigateToQuestionsView(results: [TrivialResults]) {
         
-        guard let sourceController = viewRef else { return }
-        router?.goToQuestions(results: results, fromController: sourceController)
+        guard let sourceController = viewRef, let player = playerName else { return }
+        router?.goToQuestions(playerName: player, results: results, fromController: sourceController)
     }
 }
