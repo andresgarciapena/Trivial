@@ -16,4 +16,19 @@ class QuestionsRouter {
         presenter.interactor = QuestionsInteractor()
         presenter.interactor?.presenter = presenter
     }
+    
+    func navigateToNewGame(classRef: UIViewController) {
+        
+        let vc = StartViewController(nibName: "StartViewController", bundle: nil)
+        guard let sourceNavigationController = classRef.navigationController else { return }
+        sourceNavigationController.pushViewController(vc, animated: true)
+    }
+}
+
+extension QuestionsRouter: QuestionsRouterProtocol {
+    
+    func goToNewGame(fromController: QuestionsViewController) {
+        
+        navigateToNewGame(classRef: fromController)
+    }
 }

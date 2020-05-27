@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PopupDialog
 
 class QuestionsViewController: UIViewController {
 
@@ -42,6 +43,7 @@ class QuestionsViewController: UIViewController {
         presenter.viewWillAppear(animated: animated, navigationItem: navigationItem)
         
         question = presenter.getNextQuestion()
+        refreshScreen()
         collectionView.reloadData()
     }
 
@@ -71,13 +73,30 @@ class QuestionsViewController: UIViewController {
             self.scoreLabel.text = "Score: " + String(self.presenter.getScore())
             let question = self.presenter.getNextQuestion()
             if question == nil {
-                print("Finish")
+                
+                self.showResultPopup(result: String(self.presenter.getScore()))
             } else {
-                self.questionCountLabel.text = String(format: "Question: %d / 5", self.presenter.getQuestionCount())
+                
+                self.questionCountLabel.text = String(format: "Question: %d / %@", self.presenter.getQuestionCount(), self.presenter.getMaxQuestions())
                 self.question = question
                 self.collectionView.reloadData()
             }
         })
+    }
+    
+    func showResultPopup(result: String) {
+        let title = "You complete all the questions!"
+        let message = "Your score is: " + result
+        
+        let popup = PopupDialog(title: title, message: message, image: nil)
+        
+        let buttonOne = DefaultButton(title: "New Game") {
+            self.presenter.startNewGame()
+        }
+        
+        popup.addButtons([buttonOne])
+        
+        self.present(popup, animated: true, completion: nil)
     }
 }
 

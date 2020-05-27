@@ -60,4 +60,14 @@ class QuestionsPresenter: QuestionsProtocol {
     func getQuestionCount() -> Int {
         return questionsModel!.index + 1
     }
+    
+    func getMaxQuestions() -> String {
+        return questionsModel!.numQuestions
+    }
+    
+    func startNewGame() {
+        
+        guard let sourceController = viewRef else { return }
+        router?.goToNewGame(fromController: sourceController)
+    }
 }

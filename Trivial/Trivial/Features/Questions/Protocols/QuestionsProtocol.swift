@@ -25,9 +25,15 @@ protocol QuestionsProtocol {
     func updateQuestionAndPlayerScore(numQuestion: Int, score: Int)
     func getScore() -> Int
     func getQuestionCount() -> Int
+    func getMaxQuestions() -> String
 }
 
 protocol QuestionsInteractorProtocol {
     
     var presenter: QuestionsPresenter? {get set}
+}
+
+protocol QuestionsRouterProtocol {
+    
+    func goToNewGame(fromController: QuestionsViewController)
 }

@@ -24,8 +24,11 @@ class QuestionsModel {
     
     var index: Int = 0
     
-    init(playerName: String, questions: [TrivialResults]) {
+    var numQuestions: String = ""
+    
+    init(playerName: String, maxQuestions: String, questions: [TrivialResults]) {
         self.playerName = playerName
+        self.numQuestions = maxQuestions
         for question in questions {
             var answers = question.incorrect_answers
             answers.append(question.correct_answer)
