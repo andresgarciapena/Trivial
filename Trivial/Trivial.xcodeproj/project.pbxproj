@@ -37,6 +37,7 @@
 		5BC25AAC247D6C4A008667DD /* QuestionsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25AAB247D6C4A008667DD /* QuestionsInteractor.swift */; };
 		5BC25AAE247D6C5B008667DD /* QuestionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25AAD247D6C5B008667DD /* QuestionsPresenter.swift */; };
 		5BC25AB0247D6C6F008667DD /* QuestionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25AAF247D6C6F008667DD /* QuestionsRouter.swift */; };
+		5BC25AB3247D8E14008667DD /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25AB2247D8E14008667DD /* QuestionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		5BC25AAB247D6C4A008667DD /* QuestionsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsInteractor.swift; sourceTree = "<group>"; };
 		5BC25AAD247D6C5B008667DD /* QuestionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsPresenter.swift; sourceTree = "<group>"; };
 		5BC25AAF247D6C6F008667DD /* QuestionsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsRouter.swift; sourceTree = "<group>"; };
+		5BC25AB2247D8E14008667DD /* QuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -332,6 +334,7 @@
 		5BC25A9D247D64A2008667DD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5BC25AB1247D8DF0008667DD /* CollectionCell */,
 				5BC25A9E247D64C4008667DD /* QuestionsViewController.swift */,
 				5BC25A9F247D64C4008667DD /* QuestionsViewController.xib */,
 			);
@@ -376,6 +379,14 @@
 				5BC25AA9247D6C38008667DD /* QuestionsProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5BC25AB1247D8DF0008667DD /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				5BC25AB2247D8E14008667DD /* QuestionCell.swift */,
+			);
+			path = CollectionCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -533,6 +544,7 @@
 				5BC25A41247D434D008667DD /* SceneDelegate.swift in Sources */,
 				5BC25AA4247D652A008667DD /* QuestionsModel.swift in Sources */,
 				5BC25A7F247D47E7008667DD /* StartViewInteractor.swift in Sources */,
+				5BC25AB3247D8E14008667DD /* QuestionCell.swift in Sources */,
 				5BC25AA0247D64C4008667DD /* QuestionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

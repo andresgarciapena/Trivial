@@ -22,6 +22,7 @@ class CustomizeGameViewController: UIViewController {
 
         presenter.viewRef = self
         presenter.viewDidLoad()
+        configureTextField()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,6 +35,11 @@ class CustomizeGameViewController: UIViewController {
         guard let name = playerNameTextField.text, let nQuestions = numberQuestionsTextField.text, let category = categoryTextField.text else { return }
         
         presenter.saveData(name: name, nQuestions: nQuestions, category: category)
+    }
+    
+    func configureTextField() {
+        playerNameTextField.keyboardType = .asciiCapable
+        numberQuestionsTextField.keyboardType = .numberPad
     }
 
     @IBAction func startGameButtonAction(_ sender: Any) {
