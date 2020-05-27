@@ -7,8 +7,7 @@
 //
 
 import UIKit
-
-
+import PopupDialog
 
 class CustomizeGameViewController: UIViewController {
     
@@ -44,12 +43,12 @@ class CustomizeGameViewController: UIViewController {
     }
     
     func saveConfigurationGame() {
-        guard let name = playerNameTextField.text, let nQuestions = numberQuestionsTextField.text, let category = categoryTextField.text else { return }
+        guard let name = playerNameTextField.text, let nQuestions = numberQuestionsTextField.text else { return }
         
-        if name.isEmpty || nQuestions.isEmpty || category.isEmpty {
+        if name.isEmpty || nQuestions.isEmpty {
             
         } else {
-            presenter.saveData(name: name, nQuestions: nQuestions, category: category)
+            presenter.saveData(name: name, nQuestions: nQuestions, category: String(categorySelected))
         }
     }
     
@@ -62,13 +61,27 @@ class CustomizeGameViewController: UIViewController {
         playerNameTextField.keyboardType = .asciiCapable
         numberQuestionsTextField.keyboardType = .numberPad
     }
+    
+    func showAlertPopup(state: Bool) {
+        let title = "Introduce una categoria valida"
+        
+        let popup = PopupDialog(title: title, message: nil, image: nil)
+        
+        let buttonOne = DefaultButton(title: "Continue") {
+            
+        }
+        
+        popup.addButtons([buttonOne])
+        
+        self.present(popup, animated: true, completion: nil)
+    }
 
     @IBAction func startGameButtonAction(_ sender: Any) {
         
         if categorySelected != 0 {
             saveConfigurationGame()
         } else {
-            
+            showAlertPopup(state: true)
         }
     }
     

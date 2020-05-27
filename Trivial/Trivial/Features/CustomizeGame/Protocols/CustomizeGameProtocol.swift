@@ -15,16 +15,19 @@ protocol CustomizeGameProtocol {
     var interactor: CustomizeGameInteractor? {get set}
     
     func viewDidLoad()
+    func viewWillAppear(animated: Bool, navigationController: UINavigationController?)
+    
+    func saveData(name: String, nQuestions: String, category: String)
+    func navigateToQuestionsView(results: [TrivialResults])
 }
 
 protocol CustomizeGamePresenterProtocol {
-    
     
 }
 
 protocol CustomizeGameRouterProtocol {
     
-    func goToQuestions(playerName: String, results: [TrivialResults], fromController: CustomizeGameViewController)
+    func goToQuestions(playerName: String, maxQuestions: String, results: [TrivialResults], fromController: CustomizeGameViewController)
 }
 
 protocol CustomizeGameInteractorProtocol {

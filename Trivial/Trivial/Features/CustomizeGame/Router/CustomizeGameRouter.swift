@@ -17,19 +17,19 @@ class CustomizeGameRouter {
         presenter.interactor?.presenter = presenter
     }
     
-    func navigateToQuestionsView(playerName: String, results: [TrivialResults], classRef: UIViewController) {
+    func navigateToQuestionsView(playerName: String, maxQuestions: String, results: [TrivialResults], classRef: UIViewController) {
         
         let vc = QuestionsViewController(nibName: "QuestionsViewController", bundle: nil)
         guard let sourceNavigationController = classRef.navigationController else { return }
-        vc.questionsModel = QuestionsModel(playerName: playerName, questions: results)
+        vc.questionsModel = QuestionsModel(playerName: playerName, maxQuestions: maxQuestions, questions: results)
         sourceNavigationController.pushViewController(vc, animated: true)
     }
 }
 
 extension CustomizeGameRouter: CustomizeGameRouterProtocol {
     
-    func goToQuestions(playerName: String, results: [TrivialResults], fromController: CustomizeGameViewController) {
+    func goToQuestions(playerName: String, maxQuestions: String, results: [TrivialResults], fromController: CustomizeGameViewController) {
         
-        navigateToQuestionsView(playerName: playerName, results: results, classRef: fromController)
+        navigateToQuestionsView(playerName: playerName, maxQuestions: maxQuestions, results: results, classRef: fromController)
     }
 }
