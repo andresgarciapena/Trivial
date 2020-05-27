@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartViewController" customModule="Trivial" customModuleProvider="target">
             <connections>
                 <outlet property="createGameButton" destination="gK9-HV-J4u" id="6pq-lK-jQJ"/>
+                <outlet property="titleLabel" destination="jQT-G4-o8S" id="viu-d2-y3n"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,18 +20,19 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trivial Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQT-G4-o8S">
-                    <rect key="frame" x="20" y="74" width="374" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <rect key="frame" x="20" y="94" width="374" height="42"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gK9-HV-J4u">
-                    <rect key="frame" x="72" y="752" width="270" height="60"/>
+                    <rect key="frame" x="72" y="401" width="270" height="60"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="30w-eq-Q7z"/>
                         <constraint firstAttribute="width" constant="270" id="DH3-gx-vIO"/>
                     </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                     <state key="normal" title="Button">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
@@ -38,17 +40,29 @@
                         <action selector="createGameButtonAction:" destination="-1" eventType="touchUpInside" id="hpP-mn-ykd"/>
                     </connections>
                 </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trofeo" translatesAutoresizingMaskIntoConstraints="NO" id="NHF-Ec-U4d">
+                    <rect key="frame" x="144.5" y="201" width="125" height="125"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="125" id="HJ8-Lr-iYW"/>
+                        <constraint firstAttribute="width" constant="125" id="Pf8-9n-oAs"/>
+                    </constraints>
+                </imageView>
             </subviews>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="jQT-G4-o8S" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="0Qu-2K-hrb"/>
+                <constraint firstItem="jQT-G4-o8S" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="0Qu-2K-hrb"/>
                 <constraint firstItem="gK9-HV-J4u" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Fzy-2P-A1y"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="gK9-HV-J4u" secondAttribute="bottom" constant="50" id="TDc-lr-GAA"/>
+                <constraint firstItem="gK9-HV-J4u" firstAttribute="top" secondItem="NHF-Ec-U4d" secondAttribute="bottom" constant="75" id="M6J-LX-Vz7"/>
+                <constraint firstItem="NHF-Ec-U4d" firstAttribute="top" secondItem="jQT-G4-o8S" secondAttribute="bottom" constant="65" id="fBG-80-hEp"/>
                 <constraint firstItem="jQT-G4-o8S" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="kFk-77-NUf"/>
+                <constraint firstItem="NHF-Ec-U4d" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mEA-9Q-0aD"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jQT-G4-o8S" secondAttribute="trailing" constant="20" id="pGk-VM-kR3"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="139" y="111"/>
         </view>
     </objects>
+    <resources>
+        <image name="trofeo" width="512" height="512"/>
+    </resources>
 </document>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UIGradient
 
 class CustomizeGamePresenter: CustomizeGameProtocol {
     
@@ -25,6 +26,8 @@ class CustomizeGamePresenter: CustomizeGameProtocol {
     func viewWillAppear(animated: Bool, navigationController: UINavigationController?) {
         
         navigationController?.setNavigationBarHidden(false, animated: animated)
+        navigationController?.navigationBar.barTintColor = UIColor.fromGradientWithDirection(.leftToRight, frame: (navigationController?.navigationBar.frame)!, colors: [UIColor.cyan, UIColor.blue])
+        navigationController?.navigationBar.tintColor = UIColor.black
     }
     
     func saveData(name: String, nQuestions: String, category: String) {

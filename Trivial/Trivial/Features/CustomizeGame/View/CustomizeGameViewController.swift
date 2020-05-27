@@ -21,7 +21,6 @@ class CustomizeGameViewController: UIViewController {
     
     var presenter: CustomizeGamePresenter = CustomizeGamePresenter()
     
-    //var pickerData: [PickerData] = [PickerData(name: "Dato1", number: 1), PickerData(name: "Dato2", number: 2)]
     var categorySelected: Int = 0
     
     override func viewDidLoad() {
@@ -30,12 +29,21 @@ class CustomizeGameViewController: UIViewController {
         presenter.viewRef = self
         presenter.viewDidLoad()
         configureView()
+        configureComponents()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         presenter.viewWillAppear(animated: animated, navigationController: navigationController)
+    }
+    
+    func configureComponents() {
+        view.backgroundColor = UIColor.fromGradientWithDirection(.leftToRight, frame: view.frame, colors: [UIColor.cyan, UIColor.blue])
+        
+        startGameButton.layer.cornerRadius = 30
+        startGameButton.layer.masksToBounds = true
+        startGameButton.setTitle("Start Game", for: .normal)
     }
     
     @objc func showPicker() {
@@ -63,9 +71,10 @@ class CustomizeGameViewController: UIViewController {
     }
     
     func showAlertPopup(state: Bool) {
-        let title = "Introduce una categoria valida"
+        let title = "Queck the fields!!"
+        let message = "Max number question or category are incorrect"
         
-        let popup = PopupDialog(title: title, message: nil, image: nil)
+        let popup = PopupDialog(title: title, message: message, image: nil)
         
         let buttonOne = DefaultButton(title: "Continue") {
             
@@ -78,7 +87,9 @@ class CustomizeGameViewController: UIViewController {
 
     @IBAction func startGameButtonAction(_ sender: Any) {
         
-        if categorySelected != 0 {
+        guard let number = numberQuestionsTextField.text, let intNumber = Int(number) else { return }
+        
+        if categorySelected != 0 && intNumber <= 50 {
             saveConfigurationGame()
         } else {
             showAlertPopup(state: true)

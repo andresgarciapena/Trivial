@@ -13,6 +13,7 @@
                 <outlet property="questionCountLabel" destination="igZ-mb-QHS" id="86v-P6-QKQ"/>
                 <outlet property="questionLabel" destination="ehn-Qc-mid" id="bep-cS-AmV"/>
                 <outlet property="scoreLabel" destination="E9E-Sj-eDz" id="xw9-7Z-eVf"/>
+                <outlet property="topView" destination="jEn-KV-Nbu" id="xwi-2C-RIb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,22 +26,22 @@
                     <rect key="frame" x="0.0" y="64" width="414" height="40"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igZ-mb-QHS">
-                            <rect key="frame" x="20" y="0.0" width="186.5" height="40"/>
+                            <rect key="frame" x="20" y="0.0" width="187" height="40"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9E-Sj-eDz">
-                            <rect key="frame" x="207.5" y="0.0" width="186.5" height="40"/>
+                            <rect key="frame" x="207" y="0.0" width="187" height="40"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAt-ff-Ov6">
-                            <rect key="frame" x="206.5" y="0.0" width="1" height="40"/>
+                            <rect key="frame" x="207" y="0.0" width="0.0" height="40"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="1" id="8Fm-GH-Nhw"/>
+                                <constraint firstAttribute="width" id="8Fm-GH-Nhw"/>
                             </constraints>
                         </view>
                     </subviews>

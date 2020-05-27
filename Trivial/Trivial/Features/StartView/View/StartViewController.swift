@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import UIGradient
 
 class StartViewController: UIViewController {
     
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var createGameButton: UIButton!
     
     var presenter: StartViewPresenter = StartViewPresenter()
@@ -19,12 +21,24 @@ class StartViewController: UIViewController {
 
         presenter.viewRef = self
         presenter.viewDidLoad()
+        
+        configureComponents()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         presenter.viewWillAppear(animated: animated, navigationController: navigationController)
+    }
+    
+    func configureComponents() {
+        view.backgroundColor = UIColor.fromGradientWithDirection(.topLeftToBottomRight, frame: view.frame, colors: [UIColor.blue, UIColor.orange, UIColor.green])
+        
+        titleLabel.textColor = UIColor.fromGradientWithDirection(.leftToRight, frame: view.frame, colors: [UIColor.green, UIColor.yellow])
+        
+        createGameButton.layer.cornerRadius = 30
+        createGameButton.layer.masksToBounds = true
+        createGameButton.setTitle("Create Game", for: .normal)
     }
 
     @IBAction func createGameButtonAction(_ sender: Any) {

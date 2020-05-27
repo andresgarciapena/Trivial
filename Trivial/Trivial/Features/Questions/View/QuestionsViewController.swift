@@ -11,6 +11,7 @@ import PopupDialog
 
 class QuestionsViewController: UIViewController {
 
+    @IBOutlet weak var topView: UIView!
     @IBOutlet weak var questionCountLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
@@ -35,6 +36,8 @@ class QuestionsViewController: UIViewController {
         presenter.viewRef = self
         presenter.viewDidLoad()
         presenter.saveData(questionsModel: questionsModel)
+        
+        configureComponents()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,6 +48,12 @@ class QuestionsViewController: UIViewController {
         question = presenter.getNextQuestion()
         refreshScreen()
         collectionView.reloadData()
+    }
+    
+    func configureComponents() {
+        view.backgroundColor = UIColor.fromGradientWithDirection(.leftToRight, frame: view.frame, colors: [UIColor.cyan, UIColor.blue])
+        collectionView.backgroundColor = UIColor.fromGradientWithDirection(.leftToRight, frame: view.frame, colors: [UIColor.cyan, UIColor.blue])
+        topView.backgroundColor = UIColor.fromGradientWithDirection(.leftToRight, frame: view.frame, colors: [UIColor.cyan, UIColor.blue])
     }
 
     func showIfYouGotItRight(correct: Bool, collectionView: UICollectionView, indexPath: IndexPath) {
