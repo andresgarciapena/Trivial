@@ -18,11 +18,14 @@ class QuestionsModel {
     
     var questionList: [Question] = []
     
-    var namePlayer1: String = ""
+    var playerName: String = ""
     
-    var scorePlayer1: Int = 0
+    var playerScore: Int = 0
     
-    init(questions: [TrivialResults]) {
+    var index: Int = 0
+    
+    init(playerName: String, questions: [TrivialResults]) {
+        self.playerName = playerName
         for question in questions {
             var answers = question.incorrect_answers
             answers.append(question.correct_answer)

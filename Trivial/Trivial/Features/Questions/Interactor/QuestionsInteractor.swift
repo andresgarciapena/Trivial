@@ -6,4 +6,9 @@
 //  Copyright © 2020 Andres Garcia. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class QuestionsInteractor: QuestionsInteractorProtocol {
+    
+    var presenter: QuestionsPresenter?
+}
