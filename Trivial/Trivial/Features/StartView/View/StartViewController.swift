@@ -11,9 +11,11 @@ import UIGradient
 
 class StartViewController: UIViewController {
     
+    // MARK: - IBOutlets
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var createGameButton: UIButton!
     
+    // MARK: - Variable
     var presenter: StartViewPresenter = StartViewPresenter()
     
     override func viewDidLoad() {
@@ -31,6 +33,7 @@ class StartViewController: UIViewController {
         presenter.viewWillAppear(animated: animated, navigationController: navigationController)
     }
     
+    // Configure colors from all components in view
     func configureComponents() {
         view.backgroundColor = UIColor.fromGradientWithDirection(.topLeftToBottomRight, frame: view.frame, colors: [UIColor.blue, UIColor.orange, UIColor.green])
         
@@ -41,6 +44,8 @@ class StartViewController: UIViewController {
         createGameButton.setTitle("Create Game", for: .normal)
     }
 
+    // MARK: - IBActions
+    // Navigation to start configuration game
     @IBAction func createGameButtonAction(_ sender: Any) {
         
         presenter.navigateToNextView()

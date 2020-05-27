@@ -11,17 +11,20 @@ import PopupDialog
 
 class QuestionsViewController: UIViewController {
 
+    // MARK: - IBOutlet
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var questionCountLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    // MARK: - Constants
     let reuseIdentifier = "cell"
     
     private let sectionInsets = UIEdgeInsets(top: 10.0,left: 20.0,bottom: 10.0,right: 20.0)
     private let itemsPerRow: CGFloat = 2
     
+    // MARK: - Variables
     var questionsModel: QuestionsModel?
     
     var question: Question?
@@ -50,25 +53,30 @@ class QuestionsViewController: UIViewController {
         collectionView.reloadData()
     }
     
+    // Configure colors from all components in view
     func configureComponents() {
         view.backgroundColor = UIColor.fromGradientWithDirection(.leftToRight, frame: view.frame, colors: [UIColor.cyan, UIColor.blue])
         collectionView.backgroundColor = UIColor.fromGradientWithDirection(.leftToRight, frame: view.frame, colors: [UIColor.cyan, UIColor.blue])
         topView.backgroundColor = UIColor.fromGradientWithDirection(.leftToRight, frame: view.frame, colors: [UIColor.cyan, UIColor.blue])
     }
 
+    // Function to validate response from user
     func showIfYouGotItRight(correct: Bool, collectionView: UICollectionView, indexPath: IndexPath) {
         if correct {
             let cell = collectionView.cellForItem(at: indexPath)
             cell?.backgroundColor = UIColor.green
+            // If correct increment question and score
             presenter.updateQuestionAndPlayerScore(numQuestion: 1, score: 1)
             refreshScreen()
         } else {
             let cell = collectionView.cellForItem(at: indexPath)
             cell?.backgroundColor = UIColor.red
+            // if incorrect increment only question
             presenter.updateQuestionAndPlayerScore(numQuestion: 1, score: 0)
             if let question = question {
                 for c in collectionView.visibleCells {
                     if (c as! QuestionCell).nameLabel.text == question.correct {
+                        // Shows user the correct answer
                         c.backgroundColor = UIColor.green
                     }
                 }
@@ -77,15 +85,16 @@ class QuestionsViewController: UIViewController {
         }
     }
     
+    // Function to recieve new question and print in view
     func refreshScreen() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
             self.scoreLabel.text = "Score: " + String(self.presenter.getScore())
             let question = self.presenter.getNextQuestion()
             if question == nil {
-                
+                // Show alert with the final score
                 self.showResultPopup(result: String(self.presenter.getScore()))
             } else {
-                
+                // Update header labels with the number question and total score
                 self.questionCountLabel.text = String(format: "Question: %d / %@", self.presenter.getQuestionCount(), self.presenter.getMaxQuestions())
                 self.question = question
                 self.collectionView.reloadData()
@@ -93,6 +102,7 @@ class QuestionsViewController: UIViewController {
         })
     }
     
+    // Alert
     func showResultPopup(result: String) {
         let title = "You complete all the questions!"
         let message = "Your score is: " + result
@@ -109,6 +119,7 @@ class QuestionsViewController: UIViewController {
     }
 }
 
+// MARK: - UICollectionViewDataSource, UICollectionViewDelegate
 extension QuestionsViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -144,6 +155,7 @@ extension QuestionsViewController: UICollectionViewDataSource, UICollectionViewD
     }
 }
 
+// MARK: - UICollectionViewDelegateFlowLayout
 extension QuestionsViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
       let paddingSpace = sectionInsets.left * (itemsPerRow + 1)

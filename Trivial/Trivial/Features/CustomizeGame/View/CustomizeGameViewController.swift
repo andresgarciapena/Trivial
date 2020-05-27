@@ -11,6 +11,7 @@ import PopupDialog
 
 class CustomizeGameViewController: UIViewController {
     
+    // MARK: - IBOutlet
     @IBOutlet weak var playerNameTextField: UITextField!
     @IBOutlet weak var numberQuestionsTextField: UITextField!
     @IBOutlet weak var categoryTextField: UITextField!
@@ -19,6 +20,7 @@ class CustomizeGameViewController: UIViewController {
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var okPickerButton: UIButton!
     
+    // MARK: - Variable
     var presenter: CustomizeGamePresenter = CustomizeGamePresenter()
     
     var categorySelected: Int = 0
@@ -38,16 +40,13 @@ class CustomizeGameViewController: UIViewController {
         presenter.viewWillAppear(animated: animated, navigationController: navigationController)
     }
     
+    // Configure colors from all components in view
     func configureComponents() {
         view.backgroundColor = UIColor.fromGradientWithDirection(.leftToRight, frame: view.frame, colors: [UIColor.cyan, UIColor.blue])
         
         startGameButton.layer.cornerRadius = 30
         startGameButton.layer.masksToBounds = true
         startGameButton.setTitle("Start Game", for: .normal)
-    }
-    
-    @objc func showPicker() {
-        pickerContainer.isHidden = false
     }
     
     func saveConfigurationGame() {
@@ -65,11 +64,14 @@ class CustomizeGameViewController: UIViewController {
         categoryTextField.tintColor = UIColor.clear
         
         pickerContainer.isHidden = true
+        pickerView.layer.borderWidth = 1
+        pickerView.layer.borderColor = UIColor.black.cgColor
         
         playerNameTextField.keyboardType = .asciiCapable
         numberQuestionsTextField.keyboardType = .numberPad
     }
     
+    // Alerts
     func showAlertPopup(state: Bool) {
         let title = "Queck the fields!!"
         let message = "Max number question or category are incorrect"
@@ -84,7 +86,17 @@ class CustomizeGameViewController: UIViewController {
         
         self.present(popup, animated: true, completion: nil)
     }
+    
+    func showPicker() {
+        pickerContainer.isHidden = false
+    }
+    
+    func hidePicker() {
+        pickerContainer.isHidden = true
+        categoryTextField.resignFirstResponder()
+    }
 
+    // MARK: - IBActions
     @IBAction func startGameButtonAction(_ sender: Any) {
         
         guard let number = numberQuestionsTextField.text, let intNumber = Int(number) else { return }
@@ -98,11 +110,16 @@ class CustomizeGameViewController: UIViewController {
     
     @IBAction func okPickerButtonAction(_ sender: Any) {
         
-        pickerContainer.isHidden = true
-        categoryTextField.resignFirstResponder()
+        hidePicker()
+    }
+    
+    @IBAction func cancelPickerButtonAction(_ sender: Any) {
+        
+        hidePicker()
     }
 }
 
+// MARK: - UITextFieldDelegate
 extension CustomizeGameViewController: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
@@ -111,6 +128,7 @@ extension CustomizeGameViewController: UITextFieldDelegate {
     }
 }
 
+// MARK: - UIPickerViewDelegate, UIPickerViewDataSource
 extension CustomizeGameViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
     
