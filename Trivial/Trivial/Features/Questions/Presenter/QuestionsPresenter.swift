@@ -54,7 +54,8 @@ class QuestionsPresenter: QuestionsProtocol {
     }
     
     func getScore() -> Int {
-        return questionsModel!.playerScore
+        guard let playerScore = questionsModel?.playerScore else { return 0 }
+        return playerScore
     }
     
     func getQuestionCount() -> Int {
@@ -63,6 +64,16 @@ class QuestionsPresenter: QuestionsProtocol {
     
     func getMaxQuestions() -> String {
         return questionsModel!.numQuestions
+    }
+    
+    func saveUserScore() {
+        guard let playerName = questionsModel?.playerName, let numberOfQuestions = questionsModel?.numQuestions, let numberOfCorrectQuestions = questionsModel?.playerScore else { return }
+        interactor?.uploadUserScore(playerName: playerName, numberOfQuestions: numberOfQuestions, numberOfCorrectQuestions: String(numberOfCorrectQuestions))
+    }
+    
+    func showPlayerScore() {
+        let result = getScore()
+        viewRef?.showResultPopup(result: String(result))
     }
     
     func startNewGame() {

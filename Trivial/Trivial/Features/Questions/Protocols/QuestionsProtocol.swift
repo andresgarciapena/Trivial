@@ -25,12 +25,16 @@ protocol QuestionsProtocol {
     func updateQuestionAndPlayerScore(numQuestion: Int, score: Int)
     func getScore() -> Int
     func getQuestionCount() -> Int
+    func saveUserScore()
+    func showPlayerScore()
     func getMaxQuestions() -> String
 }
 
 protocol QuestionsInteractorProtocol {
     
     var presenter: QuestionsPresenter? {get set}
+    
+    func uploadUserScore(playerName: String, numberOfQuestions: String, numberOfCorrectQuestions: String)
 }
 
 protocol QuestionsRouterProtocol {

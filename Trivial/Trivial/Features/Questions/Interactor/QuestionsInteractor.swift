@@ -11,4 +11,15 @@ import UIKit
 class QuestionsInteractor: QuestionsInteractorProtocol {
     
     var presenter: QuestionsPresenter?
+    
+    func uploadUserScore(playerName: String, numberOfQuestions: String, numberOfCorrectQuestions: String) {
+        
+        ScoreServiceManager.sharedService.uploadUserScoreApi(playerName: playerName, numberOfQuestions: numberOfQuestions, numberOfCorrectQuestions: numberOfCorrectQuestions) { (error) in
+            
+            if error == nil {
+                
+                self.presenter?.showPlayerScore()
+            }
+        }
+    }
 }
