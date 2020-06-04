@@ -6,6 +6,12 @@ target 'Trivial' do
   use_frameworks!
 
   # Pods for Trivial
+  pod 'PopupDialog', '~> 1.1'
+  pod 'UIGradient'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
 
   target 'TrivialTests' do
     inherit! :search_paths
