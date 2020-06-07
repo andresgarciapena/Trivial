@@ -23,4 +23,7 @@ struct Constants {
                                             PickerData(name: "Geography", number: 22),
                                             PickerData(name: "History", number: 23),
                                             PickerData(name: "Art", number: 24)]
+    
+    static let headerCellIdentifier = "ClassificationHeaderCell"
+    static let playerScoreCellIdentifier = "PlayerScoreCell"
 }

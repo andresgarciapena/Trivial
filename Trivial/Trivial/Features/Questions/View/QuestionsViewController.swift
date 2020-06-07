@@ -93,7 +93,6 @@ class QuestionsViewController: UIViewController {
             if question == nil {
                 // Show alert with the final score
                 self.presenter.saveUserScore()
-                //self.showResultPopup(result: String(self.presenter.getScore()))
             } else {
                 // Update header labels with the number question and total score
                 self.questionCountLabel.text = String(format: "Question: %d / %@", self.presenter.getQuestionCount(), self.presenter.getMaxQuestions())
