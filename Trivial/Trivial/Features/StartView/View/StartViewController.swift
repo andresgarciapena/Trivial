@@ -14,6 +14,7 @@ class StartViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var createGameButton: UIButton!
+    @IBOutlet weak var classificationButton: UIButton!
     
     // MARK: - Variable
     var presenter: StartViewPresenter = StartViewPresenter()
@@ -42,6 +43,10 @@ class StartViewController: UIViewController {
         createGameButton.layer.cornerRadius = 30
         createGameButton.layer.masksToBounds = true
         createGameButton.setTitle("Create Game", for: .normal)
+        
+        classificationButton.layer.cornerRadius = 30
+        classificationButton.layer.masksToBounds = true
+        classificationButton.setTitle("Classification", for: .normal)
     }
 
     // MARK: - IBActions
@@ -49,5 +54,10 @@ class StartViewController: UIViewController {
     @IBAction func createGameButtonAction(_ sender: Any) {
         
         presenter.navigateToNextView()
+    }
+    
+    @IBAction func classificationButtonAction(_ sender: Any) {
+        
+        presenter.navigateToClassificationView()
     }
 }

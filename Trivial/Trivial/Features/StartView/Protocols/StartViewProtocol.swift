@@ -15,6 +15,9 @@ protocol StartViewProtocol {
     var interactor: StartViewInteractor? {get set}
     
     func viewDidLoad()
+    func viewWillAppear(animated: Bool, navigationController: UINavigationController?)
+    func navigateToNextView()
+    func navigateToClassificationView()
 }
 
 protocol StartViewPresenterProtocol {
@@ -25,4 +28,5 @@ protocol StartViewPresenterProtocol {
 protocol StartViewRouterProtocol {
     
     func goToCustomizeGame(fromController: StartViewController)
+    func goToClassification(fromController: StartViewController)
 }

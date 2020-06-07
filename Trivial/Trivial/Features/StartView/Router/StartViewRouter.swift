@@ -23,6 +23,13 @@ class StartViewRouter {
         guard let sourceNavigationController = classRef.navigationController else { return }
         sourceNavigationController.pushViewController(vc, animated: true)
     }
+    
+    func navigateToClassification(classRef: UIViewController) {
+        
+        let vc = ClassificationViewController(nibName: "ClassificationViewController", bundle: nil)
+        guard let sourceNavigationController = classRef.navigationController else { return }
+        sourceNavigationController.pushViewController(vc, animated: true)
+    }
 }
 
 extension StartViewRouter: StartViewRouterProtocol {
@@ -30,5 +37,10 @@ extension StartViewRouter: StartViewRouterProtocol {
     func goToCustomizeGame(fromController: StartViewController) {
         
         navigateToCustomiceGame(classRef: fromController)
+    }
+    
+    func goToClassification(fromController: StartViewController) {
+        
+        navigateToClassification(classRef: fromController)
     }
 }

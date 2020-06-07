@@ -29,4 +29,10 @@ class StartViewPresenter: StartViewProtocol {
         guard let sourceController = viewRef else { return }
         router?.goToCustomizeGame(fromController: sourceController)
     }
+    
+    func navigateToClassificationView() {
+        
+        guard let sourceController = viewRef else { return }
+        router?.goToClassification(fromController: sourceController)
+    }
 }

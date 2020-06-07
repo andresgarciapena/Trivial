@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartViewController" customModule="Trivial" customModuleProvider="target">
             <connections>
+                <outlet property="classificationButton" destination="jeR-b4-1w8" id="MjO-4n-7In"/>
                 <outlet property="createGameButton" destination="gK9-HV-J4u" id="6pq-lK-jQJ"/>
                 <outlet property="titleLabel" destination="jQT-G4-o8S" id="viu-d2-y3n"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -47,6 +48,21 @@
                         <constraint firstAttribute="width" constant="125" id="Pf8-9n-oAs"/>
                     </constraints>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeR-b4-1w8">
+                    <rect key="frame" x="72" y="491" width="270" height="60"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Zu2-yk-oSg"/>
+                        <constraint firstAttribute="width" constant="270" id="gJ1-Jb-LvS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="classificationButtonAction:" destination="-1" eventType="touchUpInside" id="ifH-w6-RWC"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -57,6 +73,8 @@
                 <constraint firstItem="jQT-G4-o8S" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="kFk-77-NUf"/>
                 <constraint firstItem="NHF-Ec-U4d" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mEA-9Q-0aD"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jQT-G4-o8S" secondAttribute="trailing" constant="20" id="pGk-VM-kR3"/>
+                <constraint firstItem="jeR-b4-1w8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tCa-X4-bmo"/>
+                <constraint firstItem="jeR-b4-1w8" firstAttribute="top" secondItem="gK9-HV-J4u" secondAttribute="bottom" constant="30" id="ymz-Gc-hwA"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="139" y="111"/>
