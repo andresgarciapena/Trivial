@@ -11,6 +11,18 @@
 		08BF0F9525A255C2226B2907 /* Pods_Trivial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E44E14B149AAC84714DCD8A /* Pods_Trivial.framework */; };
 		281C05E12489678C00B1F5A3 /* ScoreServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281C05E02489678C00B1F5A3 /* ScoreServiceManager.swift */; };
 		281C05E324896A7400B1F5A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 281C05E224896A7400B1F5A3 /* GoogleService-Info.plist */; };
+		281C05E524896E5900B1F5A3 /* UserScoreResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281C05E424896E5900B1F5A3 /* UserScoreResponse.swift */; };
+		2850DA37248D4E29006C6E81 /* PlayerScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850DA36248D4E29006C6E81 /* PlayerScoreModel.swift */; };
+		2850DA40248D549F006C6E81 /* ClassificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850DA3E248D549F006C6E81 /* ClassificationViewController.swift */; };
+		2850DA41248D549F006C6E81 /* ClassificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2850DA3F248D549F006C6E81 /* ClassificationViewController.xib */; };
+		2850DA45248D57AB006C6E81 /* ClassificationHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850DA43248D57AB006C6E81 /* ClassificationHeaderCell.swift */; };
+		2850DA46248D57AB006C6E81 /* ClassificationHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2850DA44248D57AB006C6E81 /* ClassificationHeaderCell.xib */; };
+		2850DA49248D5E1C006C6E81 /* PlayerScoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850DA47248D5E1C006C6E81 /* PlayerScoreCell.swift */; };
+		2850DA4A248D5E1C006C6E81 /* PlayerScoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2850DA48248D5E1C006C6E81 /* PlayerScoreCell.xib */; };
+		2850DA4C248D623B006C6E81 /* ClassificationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850DA4B248D623B006C6E81 /* ClassificationRouter.swift */; };
+		2850DA4E248D6276006C6E81 /* ClassificationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850DA4D248D6276006C6E81 /* ClassificationPresenter.swift */; };
+		2850DA50248D62CF006C6E81 /* ClassificationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850DA4F248D62CF006C6E81 /* ClassificationInteractor.swift */; };
+		2850DA52248D6303006C6E81 /* ClassificationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850DA51248D6303006C6E81 /* ClassificationProtocol.swift */; };
 		5BC25A3F247D434D008667DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25A3E247D434D008667DD /* AppDelegate.swift */; };
 		5BC25A41247D434D008667DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25A40247D434D008667DD /* SceneDelegate.swift */; };
 		5BC25A48247D4350008667DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BC25A47247D4350008667DD /* Assets.xcassets */; };
@@ -64,6 +76,18 @@
 		25D0D61613FC6F1CAA380A16 /* Pods-TrivialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrivialTests.release.xcconfig"; path = "Target Support Files/Pods-TrivialTests/Pods-TrivialTests.release.xcconfig"; sourceTree = "<group>"; };
 		281C05E02489678C00B1F5A3 /* ScoreServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreServiceManager.swift; sourceTree = "<group>"; };
 		281C05E224896A7400B1F5A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		281C05E424896E5900B1F5A3 /* UserScoreResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserScoreResponse.swift; sourceTree = "<group>"; };
+		2850DA36248D4E29006C6E81 /* PlayerScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScoreModel.swift; sourceTree = "<group>"; };
+		2850DA3E248D549F006C6E81 /* ClassificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationViewController.swift; sourceTree = "<group>"; };
+		2850DA3F248D549F006C6E81 /* ClassificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassificationViewController.xib; sourceTree = "<group>"; };
+		2850DA43248D57AB006C6E81 /* ClassificationHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationHeaderCell.swift; sourceTree = "<group>"; };
+		2850DA44248D57AB006C6E81 /* ClassificationHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassificationHeaderCell.xib; sourceTree = "<group>"; };
+		2850DA47248D5E1C006C6E81 /* PlayerScoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScoreCell.swift; sourceTree = "<group>"; };
+		2850DA48248D5E1C006C6E81 /* PlayerScoreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerScoreCell.xib; sourceTree = "<group>"; };
+		2850DA4B248D623B006C6E81 /* ClassificationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationRouter.swift; sourceTree = "<group>"; };
+		2850DA4D248D6276006C6E81 /* ClassificationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationPresenter.swift; sourceTree = "<group>"; };
+		2850DA4F248D62CF006C6E81 /* ClassificationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationInteractor.swift; sourceTree = "<group>"; };
+		2850DA51248D6303006C6E81 /* ClassificationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationProtocol.swift; sourceTree = "<group>"; };
 		2B11CB1D366A765B89C2EFDB /* Pods_TrivialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrivialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C01CE3082F3A731D97310FB /* Pods-TrivialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrivialTests.debug.xcconfig"; path = "Target Support Files/Pods-TrivialTests/Pods-TrivialTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5BC25A3B247D434D008667DD /* Trivial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trivial.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,8 +184,83 @@
 			isa = PBXGroup;
 			children = (
 				281C05E02489678C00B1F5A3 /* ScoreServiceManager.swift */,
+				281C05E424896E5900B1F5A3 /* UserScoreResponse.swift */,
 			);
 			path = ScoresApi;
+			sourceTree = "<group>";
+		};
+		2850DA38248D53DF006C6E81 /* Classification */ = {
+			isa = PBXGroup;
+			children = (
+				2850DA53248D6E31006C6E81 /* Entities */,
+				2850DA3D248D542A006C6E81 /* Protocols */,
+				2850DA3C248D541E006C6E81 /* Interactor */,
+				2850DA3B248D540E006C6E81 /* Presenter */,
+				2850DA3A248D53FE006C6E81 /* Router */,
+				2850DA39248D53F6006C6E81 /* View */,
+			);
+			path = Classification;
+			sourceTree = "<group>";
+		};
+		2850DA39248D53F6006C6E81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2850DA42248D5779006C6E81 /* TableCell */,
+				2850DA3E248D549F006C6E81 /* ClassificationViewController.swift */,
+				2850DA3F248D549F006C6E81 /* ClassificationViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2850DA3A248D53FE006C6E81 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2850DA4B248D623B006C6E81 /* ClassificationRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2850DA3B248D540E006C6E81 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2850DA4D248D6276006C6E81 /* ClassificationPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2850DA3C248D541E006C6E81 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2850DA4F248D62CF006C6E81 /* ClassificationInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2850DA3D248D542A006C6E81 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2850DA51248D6303006C6E81 /* ClassificationProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2850DA42248D5779006C6E81 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				2850DA43248D57AB006C6E81 /* ClassificationHeaderCell.swift */,
+				2850DA44248D57AB006C6E81 /* ClassificationHeaderCell.xib */,
+				2850DA47248D5E1C006C6E81 /* PlayerScoreCell.swift */,
+				2850DA48248D5E1C006C6E81 /* PlayerScoreCell.xib */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		2850DA53248D6E31006C6E81 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				2850DA36248D4E29006C6E81 /* PlayerScoreModel.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		5BC25A32247D434D008667DD = {
@@ -351,6 +450,7 @@
 			isa = PBXGroup;
 			children = (
 				5BC25A6E247D441D008667DD /* StartView */,
+				2850DA38248D53DF006C6E81 /* Classification */,
 				5BC25A6F247D4438008667DD /* CustomizeGame */,
 				5BC25A70247D449A008667DD /* Questions */,
 			);
@@ -556,10 +656,13 @@
 			files = (
 				5BC25AA1247D64C4008667DD /* QuestionsViewController.xib in Resources */,
 				5BC25A4B247D4350008667DD /* LaunchScreen.storyboard in Resources */,
+				2850DA46248D57AB006C6E81 /* ClassificationHeaderCell.xib in Resources */,
+				2850DA4A248D5E1C006C6E81 /* PlayerScoreCell.xib in Resources */,
 				5BC25A75247D44D2008667DD /* StartViewController.xib in Resources */,
 				5BC25A8A247D546B008667DD /* CustomizeGameViewController.xib in Resources */,
 				5BC25A48247D4350008667DD /* Assets.xcassets in Resources */,
 				281C05E324896A7400B1F5A3 /* GoogleService-Info.plist in Resources */,
+				2850DA41248D549F006C6E81 /* ClassificationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -687,6 +790,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2850DA4E248D6276006C6E81 /* ClassificationPresenter.swift in Sources */,
+				2850DA4C248D623B006C6E81 /* ClassificationRouter.swift in Sources */,
 				5BC25A92247D54D4008667DD /* CustomizeGameProtocol.swift in Sources */,
 				5BC25AAA247D6C38008667DD /* QuestionsProtocol.swift in Sources */,
 				5BC25AB0247D6C6F008667DD /* QuestionsRouter.swift in Sources */,
@@ -699,15 +804,22 @@
 				5BC25A9C247D5F5B008667DD /* Constants.swift in Sources */,
 				5BC25A74247D44D2008667DD /* StartViewController.swift in Sources */,
 				5BC25A89247D546B008667DD /* CustomizeGameViewController.swift in Sources */,
+				281C05E524896E5900B1F5A3 /* UserScoreResponse.swift in Sources */,
 				5BC25A8E247D54B2008667DD /* CustomizeGamePresenter.swift in Sources */,
 				5BC25A3F247D434D008667DD /* AppDelegate.swift in Sources */,
 				5BC25A90247D54C0008667DD /* CustomizeGameInteractor.swift in Sources */,
 				5BC25A7D247D47A5008667DD /* StartViewPresenter.swift in Sources */,
 				5BC25AAE247D6C5B008667DD /* QuestionsPresenter.swift in Sources */,
 				281C05E12489678C00B1F5A3 /* ScoreServiceManager.swift in Sources */,
+				2850DA52248D6303006C6E81 /* ClassificationProtocol.swift in Sources */,
 				5BC25A41247D434D008667DD /* SceneDelegate.swift in Sources */,
+				2850DA45248D57AB006C6E81 /* ClassificationHeaderCell.swift in Sources */,
+				2850DA37248D4E29006C6E81 /* PlayerScoreModel.swift in Sources */,
 				5BC25AA4247D652A008667DD /* QuestionsModel.swift in Sources */,
+				2850DA40248D549F006C6E81 /* ClassificationViewController.swift in Sources */,
+				2850DA50248D62CF006C6E81 /* ClassificationInteractor.swift in Sources */,
 				5BC25A7F247D47E7008667DD /* StartViewInteractor.swift in Sources */,
+				2850DA49248D5E1C006C6E81 /* PlayerScoreCell.swift in Sources */,
 				5BC25AB3247D8E14008667DD /* QuestionCell.swift in Sources */,
 				5BC25AA0247D64C4008667DD /* QuestionsViewController.swift in Sources */,
 			);
@@ -806,7 +918,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -860,7 +972,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
