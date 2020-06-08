@@ -88,14 +88,14 @@ class QuestionsViewController: UIViewController {
     // Function to recieve new question and print in view
     func refreshScreen() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
-            self.scoreLabel.text = "Score: " + String(self.presenter.getScore())
+            self.scoreLabel.text = TLocalizedString("t_questions_current_score_label") + String(self.presenter.getScore())
             let question = self.presenter.getNextQuestion()
             if question == nil {
                 // Show alert with the final score
                 self.presenter.saveUserScore()
             } else {
                 // Update header labels with the number question and total score
-                self.questionCountLabel.text = String(format: "Question: %d / %@", self.presenter.getQuestionCount(), self.presenter.getMaxQuestions())
+                self.questionCountLabel.text = String(format: TLocalizedString("t_questions_current_question_totals"), self.presenter.getQuestionCount(), self.presenter.getMaxQuestions())
                 self.question = question
                 self.collectionView.reloadData()
             }
@@ -104,12 +104,12 @@ class QuestionsViewController: UIViewController {
     
     // Alert
     func showResultPopup(result: String) {
-        let title = "You complete all the questions!"
-        let message = "Your score is: " + result
+        let title = TLocalizedString("t_questions_popup_title")
+        let message = TLocalizedString("t_questions_popup_message") + result
         
         let popup = PopupDialog(title: title, message: message, image: nil)
         
-        let buttonOne = DefaultButton(title: "New Game") {
+        let buttonOne = DefaultButton(title: TLocalizedString("t_questions_popup_button")) {
             self.presenter.startNewGame()
         }
         

@@ -38,15 +38,16 @@ class StartViewController: UIViewController {
     func configureComponents() {
         view.backgroundColor = UIColor.fromGradientWithDirection(.topLeftToBottomRight, frame: view.frame, colors: [UIColor.blue, UIColor.orange, UIColor.green])
         
+        titleLabel.text = TLocalizedString("t_title_label")
         titleLabel.textColor = UIColor.fromGradientWithDirection(.leftToRight, frame: view.frame, colors: [UIColor.green, UIColor.yellow])
         
         createGameButton.layer.cornerRadius = 30
         createGameButton.layer.masksToBounds = true
-        createGameButton.setTitle("Create Game", for: .normal)
+        createGameButton.setTitle(TLocalizedString("t_create_game_button"), for: .normal)
         
         classificationButton.layer.cornerRadius = 30
         classificationButton.layer.masksToBounds = true
-        classificationButton.setTitle("Classification", for: .normal)
+        classificationButton.setTitle(TLocalizedString("t_classification_button"), for: .normal)
     }
 
     // MARK: - IBActions
@@ -56,6 +57,7 @@ class StartViewController: UIViewController {
         presenter.navigateToNextView()
     }
     
+    // Navigation to classification table
     @IBAction func classificationButtonAction(_ sender: Any) {
         
         presenter.navigateToClassificationView()

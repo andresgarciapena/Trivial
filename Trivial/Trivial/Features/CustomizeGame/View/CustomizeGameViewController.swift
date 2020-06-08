@@ -12,8 +12,12 @@ import PopupDialog
 class CustomizeGameViewController: UIViewController {
     
     // MARK: - IBOutlet
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var playerNameTextField: UITextField!
+    @IBOutlet weak var numberQuestionsLabel: UILabel!
     @IBOutlet weak var numberQuestionsTextField: UITextField!
+    @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var categoryTextField: UITextField!
     @IBOutlet weak var startGameButton: UIButton!
     @IBOutlet weak var pickerContainer: UIView!
@@ -44,9 +48,14 @@ class CustomizeGameViewController: UIViewController {
     func configureComponents() {
         view.backgroundColor = UIColor.fromGradientWithDirection(.leftToRight, frame: view.frame, colors: [UIColor.cyan, UIColor.blue])
         
+        titleLabel.text = TLocalizedString("t_customize_title_label")
+        userNameLabel.text = TLocalizedString("t_customize_username_label")
+        numberQuestionsLabel.text = TLocalizedString("t_customize_number_label")
+        categoryLabel.text = TLocalizedString("t_customize_category_label")
+        
         startGameButton.layer.cornerRadius = 30
         startGameButton.layer.masksToBounds = true
-        startGameButton.setTitle("Start Game", for: .normal)
+        startGameButton.setTitle(TLocalizedString("t_customize_start_button"), for: .normal)
     }
     
     func saveConfigurationGame() {
@@ -73,12 +82,12 @@ class CustomizeGameViewController: UIViewController {
     
     // Alerts
     func showAlertPopup(state: Bool) {
-        let title = "Queck the fields!!"
-        let message = "Max number question or category are incorrect"
+        let title = TLocalizedString("t_customize_popup_title")
+        let message = TLocalizedString("t_customize_popup_message")
         
         let popup = PopupDialog(title: title, message: message, image: nil)
         
-        let buttonOne = DefaultButton(title: "Continue") {
+        let buttonOne = DefaultButton(title: TLocalizedString("t_customize_popup_button")) {
             
         }
         

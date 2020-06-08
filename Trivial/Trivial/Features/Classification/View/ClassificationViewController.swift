@@ -15,6 +15,7 @@ struct TypeCell {
 
 class ClassificationViewController: UIViewController {
     
+    // MARK: - IBOutlets
     @IBOutlet weak var classificationTableView: UITableView!
     
     // MARK: - Variable
@@ -42,13 +43,14 @@ class ClassificationViewController: UIViewController {
     // Configure view
     func configureView() {
         view.backgroundColor = UIColor.fromGradientWithDirection(.leftToRight, frame: view.frame, colors: [UIColor.cyan, UIColor.blue])
-        navigationItem.title = "Classification"
+        navigationItem.title = TLocalizedString("t_classification_title_label")
         
         classificationTableView.register(UINib(nibName: "ClassificationHeaderCell", bundle: nil), forCellReuseIdentifier: Constants.headerCellIdentifier)
         classificationTableView.register(UINib(nibName: "PlayerScoreCell", bundle: nil), forCellReuseIdentifier: Constants.playerScoreCellIdentifier)
     }
 }
 
+// MARK: - UITableViewDelegate, UITableViewDataSource
 extension ClassificationViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -76,17 +78,19 @@ extension ClassificationViewController: UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
+    // This function returns a header cell
     func getHeaderCell(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.headerCellIdentifier, for: indexPath) as! ClassificationHeaderCell
         
-        cell.nameLabel.text = "Player name"
-        cell.correctQuestions.text = "Correct Answers"
-        cell.totalQuestions.text = "Total Questions"
+        cell.nameLabel.text = TLocalizedString("t_player_name_title_label")
+        cell.correctQuestions.text = TLocalizedString("t_correct_answer_title_label")
+        cell.totalQuestions.text = TLocalizedString("t_total_questions_title_label")
         
         return cell
     }
     
+    // This function returns a player score cell
     func getPlayerScoreCell(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let playerScore = typeCellList?[indexPath.row]

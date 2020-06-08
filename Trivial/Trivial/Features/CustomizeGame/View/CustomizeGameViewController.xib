@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomizeGameViewController" customModule="Trivial" customModuleProvider="target">
             <connections>
+                <outlet property="categoryLabel" destination="YsJ-8a-Rnk" id="fKp-go-FXR"/>
                 <outlet property="categoryTextField" destination="UhX-yi-qG9" id="Zeu-KL-XXl"/>
+                <outlet property="numberQuestionsLabel" destination="Zsh-9X-G8S" id="vlP-oc-xjs"/>
                 <outlet property="numberQuestionsTextField" destination="Myq-LC-kga" id="SuR-km-uxS"/>
                 <outlet property="okPickerButton" destination="fcw-vl-qSM" id="nM3-yq-3Gd"/>
                 <outlet property="pickerContainer" destination="09J-Ee-0sJ" id="jyT-Uc-kyV"/>
                 <outlet property="pickerView" destination="Nii-4N-3jJ" id="nEn-1L-wrj"/>
                 <outlet property="playerNameTextField" destination="E03-3D-pBG" id="Khh-LL-Oea"/>
                 <outlet property="startGameButton" destination="dWA-XG-nSU" id="0X3-bZ-wWc"/>
+                <outlet property="titleLabel" destination="Kjh-PI-kVu" id="D6P-0s-Rvo"/>
+                <outlet property="userNameLabel" destination="4jh-x6-4Jt" id="Xvn-ll-t7n"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

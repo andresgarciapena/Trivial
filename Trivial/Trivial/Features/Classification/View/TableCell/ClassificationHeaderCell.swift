@@ -10,6 +10,7 @@ import UIKit
 
 class ClassificationHeaderCell: UITableViewCell {
 
+    // MARK: - IBOutlets
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var correctQuestions: UILabel!
     @IBOutlet weak var totalQuestions: UILabel!

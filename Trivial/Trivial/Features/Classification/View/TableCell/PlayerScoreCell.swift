@@ -10,6 +10,7 @@ import UIKit
 
 class PlayerScoreCell: UITableViewCell {
 
+    // MARK: - IBOutlets
     @IBOutlet weak var playerNameLabel: UILabel!
     @IBOutlet weak var correctAnswersLabel: UILabel!
     @IBOutlet weak var totalQuestionsLabel: UILabel!
