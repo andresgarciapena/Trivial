@@ -23,6 +23,8 @@
 		2850DA4E248D6276006C6E81 /* ClassificationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850DA4D248D6276006C6E81 /* ClassificationPresenter.swift */; };
 		2850DA50248D62CF006C6E81 /* ClassificationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850DA4F248D62CF006C6E81 /* ClassificationInteractor.swift */; };
 		2850DA52248D6303006C6E81 /* ClassificationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850DA51248D6303006C6E81 /* ClassificationProtocol.swift */; };
+		2850DA55248D7095006C6E81 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850DA54248D7095006C6E81 /* Utils.swift */; };
+		2850DA5E248D77AF006C6E81 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2850DA60248D77AF006C6E81 /* Localizable.strings */; };
 		5BC25A3F247D434D008667DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25A3E247D434D008667DD /* AppDelegate.swift */; };
 		5BC25A41247D434D008667DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC25A40247D434D008667DD /* SceneDelegate.swift */; };
 		5BC25A48247D4350008667DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BC25A47247D4350008667DD /* Assets.xcassets */; };
@@ -88,6 +90,8 @@
 		2850DA4D248D6276006C6E81 /* ClassificationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationPresenter.swift; sourceTree = "<group>"; };
 		2850DA4F248D62CF006C6E81 /* ClassificationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationInteractor.swift; sourceTree = "<group>"; };
 		2850DA51248D6303006C6E81 /* ClassificationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationProtocol.swift; sourceTree = "<group>"; };
+		2850DA54248D7095006C6E81 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		2850DA5F248D77AF006C6E81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2B11CB1D366A765B89C2EFDB /* Pods_TrivialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrivialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C01CE3082F3A731D97310FB /* Pods-TrivialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrivialTests.debug.xcconfig"; path = "Target Support Files/Pods-TrivialTests/Pods-TrivialTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5BC25A3B247D434D008667DD /* Trivial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trivial.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -470,6 +474,8 @@
 			isa = PBXGroup;
 			children = (
 				5BC25A9B247D5F5B008667DD /* Constants.swift */,
+				2850DA54248D7095006C6E81 /* Utils.swift */,
+				2850DA60248D77AF006C6E81 /* Localizable.strings */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -659,6 +665,7 @@
 				2850DA46248D57AB006C6E81 /* ClassificationHeaderCell.xib in Resources */,
 				2850DA4A248D5E1C006C6E81 /* PlayerScoreCell.xib in Resources */,
 				5BC25A75247D44D2008667DD /* StartViewController.xib in Resources */,
+				2850DA5E248D77AF006C6E81 /* Localizable.strings in Resources */,
 				5BC25A8A247D546B008667DD /* CustomizeGameViewController.xib in Resources */,
 				5BC25A48247D4350008667DD /* Assets.xcassets in Resources */,
 				281C05E324896A7400B1F5A3 /* GoogleService-Info.plist in Resources */,
@@ -819,6 +826,7 @@
 				2850DA40248D549F006C6E81 /* ClassificationViewController.swift in Sources */,
 				2850DA50248D62CF006C6E81 /* ClassificationInteractor.swift in Sources */,
 				5BC25A7F247D47E7008667DD /* StartViewInteractor.swift in Sources */,
+				2850DA55248D7095006C6E81 /* Utils.swift in Sources */,
 				2850DA49248D5E1C006C6E81 /* PlayerScoreCell.swift in Sources */,
 				5BC25AB3247D8E14008667DD /* QuestionCell.swift in Sources */,
 				5BC25AA0247D64C4008667DD /* QuestionsViewController.swift in Sources */,
@@ -857,6 +865,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		2850DA60248D77AF006C6E81 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2850DA5F248D77AF006C6E81 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		5BC25A49247D4350008667DD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -994,6 +1010,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = andresapps.Trivial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1013,6 +1030,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = andresapps.Trivial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

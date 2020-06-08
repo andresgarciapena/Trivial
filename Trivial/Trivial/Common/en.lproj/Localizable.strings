@@ -1,0 +1,37 @@
+/* 
+  Localizable.strings
+  Trivial
+
+  Created by Andres Garcia Peña on 07/06/2020.
+  Copyright © 2020 Andres Garcia. All rights reserved.
+*/
+
+// MARK: - StartView
+"t_title_label" = "Trivial Game";
+"t_create_game_button" = "Create game";
+"t_classification_button" = "Classification";
+
+// MARK: - ClassificationView
+"t_classification_title_label" = "Classification";
+"t_player_name_title_label" = "Player Name";
+"t_correct_answer_title_label" = "Correct Answers";
+"t_total_questions_title_label" = "Total Questions";
+
+// MARK: - CustomizeGame
+"t_customize_title_label" = "Configure your party";
+"t_customize_username_label" = "Username:";
+"t_customize_number_label" = "Number of questions (max 50):";
+"t_customize_category_label" = "Category:";
+"t_customize_start_button" = "Start Game";
+
+"t_customize_popup_title" = "Queck the fields!!";
+"t_customize_popup_message" = "Max number question or category are incorrect";
+"t_customize_popup_button" = "Continue";
+
+// MARK: - QuestionsView
+"t_questions_current_score_label" = "Score: ";
+"t_questions_current_question_totals" = "Question: %d / %@";
+
+"t_questions_popup_title" = "You complete all the questions!";
+"t_questions_popup_message" = "Your score is: ";
+"t_questions_popup_button" = "New Game";
